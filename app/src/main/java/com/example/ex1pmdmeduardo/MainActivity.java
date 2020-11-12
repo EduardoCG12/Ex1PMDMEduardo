@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("img", ar_animal.get(recycler.getChildAdapterPosition(v)).getImagen());
                 startActivityForResult(intent, 1);
             });
-
             //metemos el adapter creado al recyclerView
             recycler.setAdapter(adapter);
         }

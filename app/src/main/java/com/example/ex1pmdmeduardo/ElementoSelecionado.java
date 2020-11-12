@@ -16,7 +16,6 @@ public class ElementoSelecionado extends AppCompatActivity {
     ImageView img;
     EditText nota;
     Button ponernota;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

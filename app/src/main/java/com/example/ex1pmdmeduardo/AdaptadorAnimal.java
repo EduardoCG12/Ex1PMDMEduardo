@@ -26,7 +26,8 @@ public class AdaptadorAnimal extends RecyclerView.Adapter<AdaptadorAnimal.ViewHo
     @Override
     public ViewHolderDatos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //"inflamos" el items_recycler.xml
-        @SuppressLint("InflateParams") View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items_recycler,null,false);
+        @SuppressLint("InflateParams") View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.items_recycler,null,false);
         //Para escuchar el evento de selecion
         view.setOnClickListener(this);
         return new ViewHolderDatos(view);
